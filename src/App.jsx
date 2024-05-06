@@ -1,14 +1,28 @@
-import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/pages/Layout";
+import Home from "./components/pages/Home";
+import Explore from "./components/pages/Explore";
+import Genre from "./components/pages/Genre";
+import News from "./components/pages/News";
+import Movies from "./components/pages/Movies";
+import TVShows from "./components/pages/TVShows";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+ 
   return (
-    <>
-     <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+      {/* <Route path="/" element={<Home />} /> */}
+      <Route path="/" element={<Layout />}>
+      <Route path="/Layout/Home" element={<Home />} />
+          <Route path="/Layout/Explore" element={<Explore />} />
+          <Route path="/Layout/Genre" element={<Genre />} />
+          <Route path="/Layout/News" element={<News />} />
+          <Route path="/Layout/Movies" element={<Movies />} />
+          <Route path="/Layout/TVShows" element={<TVShows />} />
+          </Route>
+      </Routes>
+      </BrowserRouter>
   )
 }
 
