@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/pages/Layout";
-import Home from "./components/pages/Home";
 import Moviees from "./components/pages/moviess";
 import Explore from "./components/pages/Explore";
 import Genre from "./components/pages/Genre";
 import News from "./components/pages/News";
 import Movies from "./components/pages/Movies";
 import TVShows from "./components/pages/TVShows";
+import Home from "./components/pages/Home";
 
 function App() {
  
