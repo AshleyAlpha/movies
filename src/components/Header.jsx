@@ -6,12 +6,15 @@ const Header = () => {
   return (
     <div className="header-container px-36">
       <div className="flex justify-between items-center h-16 px-4">
+        
+      <NavLink to="/Layout/Home">
         <div className="flex items-center space-x-2">
           <img src="movie.png" alt="Logo" className="h-14 w-auto" />
-          {/* <h1 className="text-cyan-100">Movies Bazer</h1> */}
         </div>
+        </NavLink>
 
         <div className="flex items-center space-x-3">
+        
           <NavLink to="/Layout/Home" className="text-cyan-100">
             Home
           </NavLink>
