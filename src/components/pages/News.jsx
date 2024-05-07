@@ -37,9 +37,9 @@ const News = () => {
             {data.map((item)=>(
                 <div key={item.id}>
                     <img src={`https://image.tmdb.org/t/p/w500${item.poster_path}`}/>
-                    <p className='text-white'>{item.title}</p>
-                    <p className='text-white'>{item.original_language}</p>
-                    <p className='text-white'>{item.vote_count}</p>
+                    <p className='text-cyan-300'>{item.title}</p>
+                    <p className='text-cyan-300'>{item.original_language}</p>
+                    <p className='text-cyan-300'>{item.vote_count}</p>
                 </div>
             ))}
 
